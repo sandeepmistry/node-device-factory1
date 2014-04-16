@@ -27,6 +27,13 @@ DeviceFactory1.discover(function(df1) {
         });
       },
       function(callback) {
+        console.log('readBatteryLevel');
+        df1.readBatteryLevel(function(batteryLevel) {
+          console.log('\tbattery level = ' + batteryLevel);
+          callback();
+        });
+      },
+      function(callback) {
         console.log('disconnect');
         df1.disconnect(callback);
       }

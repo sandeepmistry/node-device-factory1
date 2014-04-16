@@ -11,5 +11,6 @@ DeviceFactory1.is = function(peripheral) {
 };
 
 NobleDevice.setup(DeviceFactory1);
+NobleDevice.BatteryService.setup(DeviceFactory1);
 
 module.exports = DeviceFactory1;
