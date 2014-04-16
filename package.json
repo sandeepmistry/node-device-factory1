@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/sandeepmistry/node-device-factory1/issues"
   },
-  "homepage": "https://github.com/sandeepmistry/node-device-factory1"
+  "homepage": "https://github.com/sandeepmistry/node-device-factory1",
+  "dependencies": {
+    "noble-device": "git://github.com/sandeepmistry/noble-device"
+  },
+  "devDependencies": {
+    "async": "~0.7.0"
+  }
 }
