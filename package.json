@@ -1,0 +1,23 @@
+{
+  "name": "device-factory1",
+  "version": "0.0.0",
+  "description": "A node.js lib for the Device Factory 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandeepmistry/node-device-factory1.git"
+  },
+  "keywords": [
+    "device",
+    "factory"
+  ],
+  "author": "Sandeep Mistry <sandeep.mistry@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandeepmistry/node-device-factory1/issues"
+  },
+  "homepage": "https://github.com/sandeepmistry/node-device-factory1"
+}
