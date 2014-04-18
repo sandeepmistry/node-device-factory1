@@ -76,6 +76,28 @@ DeviceFactory1.discover(function(df1) {
         });
       },
       function(callback) {
+        console.log('setLed - red');
+        df1.setLed(true, false, false, function() {
+          setTimeout(callback, 1000);
+        });
+      },
+      function(callback) {
+        console.log('setLed - green');
+        df1.setLed(false, true, false, function() {
+          setTimeout(callback, 1000);
+        });
+      },
+      function(callback) {
+        console.log('setLed - blue');
+        df1.setLed(false, false, true, function() {
+          setTimeout(callback, 1000);
+        });
+      },
+      function(callback) {
+        console.log('setLed - off');
+        df1.setLed(false, false, false, callback);
+      },
+      function(callback) {
         console.log('disconnect');
         df1.disconnect(callback);
       }
