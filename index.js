@@ -10,7 +10,7 @@ DeviceFactory1.is = function(peripheral) {
   return (peripheral.advertisement.localName === 'df1');
 };
 
-NobleDevice.setup(DeviceFactory1);
-NobleDevice.BatteryService.setup(DeviceFactory1);
+NobleDevice.Util.inherits(DeviceFactory1, NobleDevice);
+NobleDevice.Util.mixin(DeviceFactory1, NobleDevice.BatteryService);
 
 module.exports = DeviceFactory1;
