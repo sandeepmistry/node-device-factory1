@@ -27,6 +27,48 @@ DeviceFactory1.discover(function(df1) {
         });
       },
       function(callback) {
+        console.log('readModelNumber');
+        df1.readModelNumber(function(modelNumber) {
+          console.log('\tmodel name = ' + modelNumber);
+          callback();
+        });
+      },
+      function(callback) {
+        console.log('readSerialNumber');
+        df1.readSerialNumber(function(serialNumber) {
+          console.log('\tserial name = ' + serialNumber);
+          callback();
+        });
+      },
+      function(callback) {
+        console.log('readFirmwareRevision');
+        df1.readFirmwareRevision(function(firmwareRevision) {
+          console.log('\tfirmware revision = ' + firmwareRevision);
+          callback();
+        });
+      },
+      function(callback) {
+        console.log('readHardwareRevision');
+        df1.readHardwareRevision(function(hardwareRevision) {
+          console.log('\thardware revision = ' + hardwareRevision);
+          callback();
+        });
+      },
+      function(callback) {
+        console.log('readSoftwareRevision');
+        df1.readSoftwareRevision(function(softwareRevision) {
+          console.log('\tsoftware revision = ' + softwareRevision);
+          callback();
+        });
+      },
+      function(callback) {
+        console.log('readManufacturerName');
+        df1.readManufacturerName(function(manufacturerName) {
+          console.log('\tmanufacturer name = ' + manufacturerName);
+          callback();
+        });
+      },
+      function(callback) {
         console.log('readBatteryLevel');
         df1.readBatteryLevel(function(batteryLevel) {
           console.log('\tbattery level = ' + batteryLevel);

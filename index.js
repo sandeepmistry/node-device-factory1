@@ -12,5 +12,6 @@ DeviceFactory1.is = function(peripheral) {
 
 NobleDevice.Util.inherits(DeviceFactory1, NobleDevice);
 NobleDevice.Util.mixin(DeviceFactory1, NobleDevice.BatteryService);
+NobleDevice.Util.mixin(DeviceFactory1, NobleDevice.DeviceInformationService);
 
 module.exports = DeviceFactory1;
