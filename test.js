@@ -10,6 +10,10 @@ DeviceFactory1.discover(function(df1) {
     process.exit(0);
   });
 
+  df1.on('accelerometerChange', function(x, y, z) {
+    console.log('accelerometerChange: x = %s, y = %s, z = %s', x.toFixed(1), y.toFixed(1), z.toFixed(1));
+  });
+
   async.series([
       function(callback) {
         console.log('connect');
@@ -96,6 +100,25 @@ DeviceFactory1.discover(function(df1) {
       function(callback) {
         console.log('setLed - off');
         df1.setLed(false, false, false, callback);
+      },
+      function(callback) {
+        console.log('enableAccelerometer');
+        df1.enableAccelerometer(callback);
+      },
+      function(callback) {
+        console.log('notifyAccelerometer');
+        df1.notifyAccelerometer(callback);
+      },
+      function(callback) {
+        setTimeout(callback, 60000);
+      },
+      function(callback) {
+        console.log('unnotifyAccelerometer');
+        df1.unnotifyAccelerometer(callback);
+      },
+      function(callback) {
+        console.log('disableAccelerometer');
+        df1.disableAccelerometer(callback);
       },
       function(callback) {
         console.log('disconnect');
