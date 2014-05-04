@@ -1,5 +1,3 @@
-var async = require('async');
-
 var NobleDevice = require('noble-device');
 
 var TEST_SERVICE_UUID          = 'aa60';
