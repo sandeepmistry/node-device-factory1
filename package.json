@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/sandeepmistry/node-device-factory1",
   "dependencies": {
-    "noble-device": "git://github.com/sandeepmistry/noble-device"
+    "noble-device": "~0.1.0"
   },
   "devDependencies": {
     "async": "~0.7.0"
